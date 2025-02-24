@@ -16,14 +16,6 @@ The data set contains the following nine diseases:
 - Squamous cell carcinoma
 - Vascular lesion
 
-## Table of Contents
-* [General Info](#general-information)
-* [Model Architecture](#model-architecture)
-* [Technologies Used](#technologies-used)
-* [Conclusions](#conclusions)
-* [Acknowledgements](#acknowledgements)
-
-<!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
 - We aim to develop a Convolutional Neural Network (CNN) based model with the capability to accurately identify cases of melanoma. Melanoma, a form of skin cancer, can pose a severe threat if not detected at an early stage, constituting a significant portion of skin cancer-related fatalities (about 75%). The implementation of a solution capable of analyzing images and promptly notifying dermatologists about the presence of melanoma holds the potential to mitigate substantial manual effort currently involved in the diagnostic process.
@@ -37,51 +29,6 @@ For this project, we are utilizing a comprehensive dataset of skin images that i
 
 ## Model Architecture
 The CNN model architecture consists of multiple convolutional and pooling layers followed by fully connected layers. The architecture was designed to learn relevant features from the images for accurate classification.
-
-![Model Architecture](images/model_architecture.png)
-Figure 1: CNN model architecture for melanoma detection.
-
-## Conclusions
-1. **Model Training Progress**:
-   - The model was trained for 28 epochs before early stopping was triggered.
-   - The training loss decreased progressively over the epochs, indicating the model's learning and convergence.
-   - Training accuracy improved with each epoch, reaching approximately 91.18% by the end.
-
-2. **Validation Performance**:
-   - The validation accuracy improved consistently with each epoch, peaking at around 92.28%.
-   - Validation loss decreased as the model learned, highlighting its ability to generalize well on unseen data.
-   
-![Model Accuracy and Loss](images/model_accuracy_loss.png)
-Figure 2: Model accuracy and loss during training and validation.
-
-
-3. **Model Generalization**:
-   - The model demonstrated strong generalization, as evidenced by the consistent improvement in validation accuracy and reduction in validation loss.
-   - These results suggest that the model effectively learned relevant features from the training data and successfully applied them to new images.
-
-4. **Early Stopping**:
-   - The early stopping mechanism prevented overfitting by halting training once the validation accuracy plateaued, contributing to better model generalization.
-
-5. **Image Classification**:
-   - The final model was able to accurately classify test images from the dataset.
-   - An example prediction was provided, where the actual class "basal cell carcinoma" was correctly identified as the predicted class.
-
-6. **Google Colab Utilization**:
-   - Google Colab was used to facilitate the entire process, from loading the dataset and preprocessing images to training the CNN model.
-   - The cloud-based environment of Google Colab allowed seamless access to resources, eliminating potential hardware constraints.
-
-7. **Class Imbalance Handling**:
-   - The class imbalances in the dataset were addressed using data augmentation techniques, specifically rotation augmentation.
-   - Data augmentation helped improve model performance by generating additional diverse samples for each class.
-
-8. **Model Evaluation**:
-   - The model's ability to accurately classify images and its strong validation performance indicate its potential utility in assisting dermatologists with melanoma detection.
-   - Continued evaluation and potential fine-tuning of the model could further enhance its performance and clinical relevance.
-   
-Overall, the trained CNN model demonstrates promising results in accurately classifying skin cancer images, with effective handling of class imbalances and avoidance of overfitting. The use of Google Colab streamlined the development process and allowed for efficient experimentation. Further refinement and evaluation could contribute to the model's practical applicability in dermatological diagnoses.
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
 
 ## Technologies Used
 - Python: The programming language used for writing the entire code.
@@ -97,11 +44,3 @@ Overall, the trained CNN model demonstrates promising results in accurately clas
 - Google Colab: An online platform for writing and executing Python code, often used for data analysis and machine learning.
 
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
-
-## Acknowledgements
-- This project was inspired by the need for efficient melanoma detection.
-- The "Skin cancer ISIC The International Skin Imaging Collaboration" dataset was used for training and evaluation.
-- The project drew insights from various sources to develop an effective CNN model.
-
-## Contact
-Created by [@iamnarendrasingh](https://www.linkedin.com/in/narendrasingh92/) - feel free to contact me!
